@@ -1,0 +1,27 @@
+{
+  "name": "NYDownLoadLib",
+  "version": "0.1.0",
+  "summary": "A short description of NYDownLoadLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/znycat@163.com/NYDownLoadLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "znycat@163.com": "znycat@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/znycat@163.com/NYDownLoadLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NYDownLoadLib/Classes/**/*",
+  "dependencies": {
+    "CryptoSwift": [
+
+    ]
+  }
+}

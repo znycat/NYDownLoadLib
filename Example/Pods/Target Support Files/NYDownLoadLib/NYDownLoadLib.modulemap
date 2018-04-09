@@ -1,0 +1,6 @@
+framework module NYDownLoadLib {
+  umbrella header "NYDownLoadLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

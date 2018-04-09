@@ -29,9 +29,9 @@
 
 /* Begin PBXFileReference section */
 		022264E2D1D9639A98549C18 /* Pods-NYDownLoadLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYDownLoadLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYDownLoadLib_Example/Pods-NYDownLoadLib_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0D184013A37038E932C84DFF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		21F83DEF9469EC2EDB8ECF30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		35817583D02A934C23ED25FC /* NYDownLoadLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NYDownLoadLib.podspec; path = ../NYDownLoadLib.podspec; sourceTree = "<group>"; };
+		0D184013A37038E932C84DFF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		21F83DEF9469EC2EDB8ECF30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		35817583D02A934C23ED25FC /* NYDownLoadLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NYDownLoadLib.podspec; path = ../NYDownLoadLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4C29131AE5E8E9E90AA4DE12 /* Pods-NYDownLoadLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYDownLoadLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYDownLoadLib_Example/Pods-NYDownLoadLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4C43F9A492F2A5DE166E98BE /* Pods-NYDownLoadLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYDownLoadLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYDownLoadLib_Tests/Pods-NYDownLoadLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* NYDownLoadLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYDownLoadLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,10 +328,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NYDownLoadLib_Example/Pods-NYDownLoadLib_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/NYDownLoadLib/NYDownLoadLib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NYDownLoadLib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +473,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -516,6 +519,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
