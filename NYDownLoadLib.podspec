@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NYDownLoadLib'
-  s.version          = '0.1.0'
+  s.version  '
   s.summary          = 'A short description of NYDownLoadLib.'
 
 # This description is used to generate tags and improve search results.
