@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 NYDownLoadLib 下载 断点续传
                        DESC
 
-  s.homepage         = 'https://github.com/znycat@163.com/NYDownLoadLib'
+  s.homepage         = 'https://github.com/znycat/NYDownLoadLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'znycat@163.com' => 'znycat@qq.com' }
-  s.source           = { :git => 'https://github.com/znycat@163.com/NYDownLoadLib.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/znycat/NYDownLoadLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
